@@ -26,6 +26,16 @@ walkcount = 0
 
 run = True
 
+sound = pygame.mixer
+sound.init()
+music = sound.music
+music.load("music.mp3")
+music.play(-1,0.0)
+
+# pygame.mixer.init()
+# pygame.mixer.music.load("music.mp3")
+# pygame.mixer.music.play(-1,0.0)
+
 def redrawWindow():
     global walkcount
     win.blit(background,(0,0))
